@@ -1,16 +1,24 @@
 import React from 'react';
 import './Header.scss';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
         <div className="header">
-            <img src="https://m.media-amazon.com/images/G/01/sell/images/logo-amazon-white.svg" className="logo" />
+            {/* Brand Logo */}
+            <Link to="/">
+                <img src="https://m.media-amazon.com/images/G/01/sell/images/logo-amazon-white.svg" className="logo" />
+            </Link>
+
+            {/* Big search bar */}
             <div className="header-search">
                 <input type="text" value="" className="search-input" />
-                <span class="material-icons ico">
+                <span className="material-icons ico">
                     search
                 </span>
             </div>
+
+            {/* Navigation */}
             <div className="header-navigation">
                 <div className="nav-menu">
                     <span className="menu-title">
@@ -37,12 +45,13 @@ function Header() {
                     </span>
                 </div>
                 <div className="nav-menu">
-                    
-                    <span>
-                    <span class="material-icons">
-                        shopping_cart
-                    </span> : 0
-                    </span>
+                    <Link to="/checkout">
+                        <span>
+                            <span className="material-icons">
+                                shopping_cart
+                            </span> : 0
+                        </span>
+                    </Link>
                 </div>
             </div>
         </div>   

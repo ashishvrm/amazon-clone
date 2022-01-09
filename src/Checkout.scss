@@ -1,0 +1,36 @@
+@import './style/variable';
+
+.checkout{
+    padding: $md;
+    
+    flex-direction: column;
+    .ad-block{
+        width: 768px;
+        height: 90px;
+        border: 1px solid $secondary;
+        background: white;
+    }
+    .cart-items{
+        display: flex;
+        flex: 1;
+        width: 100%;
+        margin-top: $md;
+
+        .checkout-cart-items{
+            background: white;
+            padding: $md;
+            margin-right: $md;
+            width: $thrid-width;
+            h2{
+                margin: $md 0;
+                border-bottom: 1px solid #efefef;
+                padding-bottom: $sm;
+            }
+        }
+        .checkout-sidebar{
+            background: white;
+            width: $fourth-width;
+            padding: $md;
+        }
+    }
+}

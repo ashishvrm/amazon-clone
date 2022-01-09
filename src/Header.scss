@@ -8,6 +8,8 @@
     color: #fff;
     width: $full-width;
     position: sticky;
+    align-items: center;
+    justify-content: center;
 
     .header-search{
         display: flex;

@@ -28,3 +28,14 @@ $half-width: 50%;
 $fourth-width: 25%;
 
 $container: 1200px;
+
+.primary-btn{
+    background: $brand;
+    color: white;
+    padding: $sm $xl;
+    border-radius: 100px;
+    border: 0px none;
+    font-size: $sm;
+    font-weight: 700;
+    margin-top: $sm;
+}

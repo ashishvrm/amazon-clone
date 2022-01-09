@@ -1,0 +1,18 @@
+@import './style/variable';
+
+.subtotal{
+    display: flex;
+    flex-direction: column;
+
+    .subtotal-title{
+        font-size: 22px;
+        margin-bottom: $xs;
+    }
+
+    .subtotal-gift{
+        
+        input{
+            margin-right: $xs;
+        }
+    }
+}

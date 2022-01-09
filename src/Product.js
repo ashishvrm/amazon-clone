@@ -14,13 +14,13 @@ function Product({ title, price, image, rating }) {
             <div className='product-rating'>
                 {Array(rating)
                 .fill().map((_, i) => (
-                    <span class="material-icons">
-                        <span class="material-icons"> star </span>
+                    <span className="material-icons">
+                        <span className="material-icons"> star </span>
                     </span>
                 ))}
             </div>
             <img src={image} alt={title} />
-            <button>Add to cart</button>
+            <button className="primary-btn">Add to cart</button>
         </div>
     )
 }
