@@ -1,0 +1,44 @@
+@import './style/variable';
+@import "~/node_modules/material-design-icons/iconfont/material-icons.css";
+
+.header{
+    background: $primay;
+    display: flex;
+    padding: $sm;
+    color: #fff;
+    width: $full-width;
+    position: sticky;
+
+    .header-search{
+        display: flex;
+        flex: 1;
+        margin: 0 $xs;
+    }
+    .search-input{
+        width: $full-width;
+    }
+
+    .ico{
+        padding: $xs;
+        background: $brand;
+    }
+
+    .header-navigation{
+        display: flex;
+        justify-content: space-evenly;
+
+        .nav-menu{
+            display: flex;
+            flex-direction: column;
+            margin: 0 $sm;
+            font-weight: 700;
+            text-align: left;
+            align-items: center;
+            justify-content: center;
+
+            .menu-title{
+                font-size: $sm;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+$primay: #151d26;
+$secondary: #aab7b8;
+$brand: #f90;
+
+$xs: 10px;
+$sm: 14px;
+$md: 20px;
+$lg: 32px;
+$xl: 48px;
+
+
+h1{
+    font-size: $xl;
+}
+h2{
+    font-size: $lg;
+}
+h3{
+    font-size: $md;
+}
+h4{
+    font-size: $sm;
+}
+
+$full-width: 100%;
+$thrid-width: 75%;
+$half-width: 50%;
+$fourth-width: 25%;
+
+$container: 1200px;

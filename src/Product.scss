@@ -1,0 +1,43 @@
+@import './style/variable';
+.product{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    z-index: 1;
+    padding: $lg;
+    margin: $md;
+    .product-info{
+        h4{
+            margin-bottom: $sm;
+        }
+        .product-price{
+            padding: $sm 0;
+            .price{
+                font-size: $md;
+            }
+        }
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        max-width: 200px;
+        object-fit: contain;
+        margin-bottom: $md;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .product-rating{
+        color: $brand;
+        margin: $xs 0;
+    }
+    button{
+        margin-top: $sm;
+        background: $brand;
+        color: white;
+        padding: $sm;
+        border: 0px none;
+        border-radius: 100px;
+        font-size: $md;
+    }
+}
