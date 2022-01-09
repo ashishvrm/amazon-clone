@@ -1,8 +1,11 @@
 import React from 'react';
 import './Header.scss';
 import { Link } from 'react-router-dom';
+import { useStateValue } from './StateProvider';
 
 function Header() {
+
+const [{ basket }] = useStateValue();
     return (
         <div className="header">
             {/* Brand Logo */}
@@ -21,12 +24,14 @@ function Header() {
             {/* Navigation */}
             <div className="header-navigation">
                 <div className="nav-menu">
-                    <span className="menu-title">
-                        Hello, Guest
-                    </span>
-                    <span>
-                        Sign in
-                    </span>
+                    <Link to="/login">
+                        <span className="menu-title">
+                            Hello, Guest
+                        </span>
+                        <span>
+                            Sign in
+                        </span>
+                    </Link>
                 </div>
                 <div className="nav-menu">
                     <span className="menu-title">
@@ -49,7 +54,7 @@ function Header() {
                         <span>
                             <span className="material-icons">
                                 shopping_cart
-                            </span> : 0
+                            </span> : {basket?.length}
                         </span>
                     </Link>
                 </div>

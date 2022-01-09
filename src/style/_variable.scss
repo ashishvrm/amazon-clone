@@ -38,4 +38,16 @@ $container: 1200px;
     font-size: $sm;
     font-weight: 700;
     margin-top: $sm;
+    cursor: pointer;
+}
+.secondary-btn{
+    background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+    color: $primay;
+    padding: $sm $xl;
+    border-radius: 4px;
+    border: 1px solid $secondary;
+    font-size: $sm;
+    font-weight: 500;
+    margin-top: $sm;
+    cursor: pointer;
 }

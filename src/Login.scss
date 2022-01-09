@@ -1,0 +1,60 @@
+@import './style/variable';
+
+.login{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: $md;
+
+    .brand-logo{
+        max-width: 300px;
+    }
+    .login-container{
+        
+        .form-container{
+            h1{
+                font-size: $lg;
+            }
+    
+            background: white;
+            padding: $md;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            label{
+                font-weight: 500;
+                margin-top: $md;
+            }
+            input{
+                padding: $xs;
+            }
+            small{
+                margin: $md 0;
+            }
+        }
+        .create-new-account{
+            display: flex;
+            flex-direction: column;
+            padding: $lg 0;
+            border-bottom: 1px solid #ddd;
+            small{
+                text-align: center;
+            }
+        }
+    }
+    .login-footer{
+        
+        ul{
+            padding: $md 0;
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+
+            li{
+                
+            }
+        }
+    }
+}

@@ -5,8 +5,12 @@
     background: white;
     z-index: 1;
     padding: $lg;
-    margin: $md;
+    margin: $sm;
+    width: $full-width;
+    align-items: center;
+
     .product-info{
+        text-align: center;
         h4{
             margin-bottom: $sm;
         }
@@ -29,6 +33,6 @@
     }
     .product-rating{
         color: $brand;
-        margin: $xs 0;
+        margin-top: $xs;
     }
 }
